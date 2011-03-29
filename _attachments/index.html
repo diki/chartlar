@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taskr</title>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light:regular" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="vendor/farbtastic/farbtastic.css" type="text/css">
+    <link rel="stylesheet" href="vendor/jQuery-UI/css/ui-lightness/jquery-ui-1.8.1.custom.css" type="text/css">
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link rel="stylesheet" href="style/mine.css" type="text/css">
+		  
+  </head>
+  <body>
+    <div id="header">
+	      <div id="account"></div>
+<!--      <h1><a href="#/">Taskr</a> <span id="current-path"></span></h1>-->
+      <h1 style="font-family: 'Josefin Sans Std Light'; padding-top: 10px; padding-left: 5px; color: tomato;">Chartlar</h1>
+    </div>
+    <div id="content">
+<!--    		<div class="clear"></div>-->
+    		<ul class="css-tabs">
+				    <li><a href="#"">Chart</a></li>
+				    <li><a href="#">Legend</a></li>
+				    <li><a href="#">Titles</a></li>
+				    <li><a href="#">Subtitles</a></li>
+				    <li><a href="#">x-Axis</a></li>
+				    <li><a href="#">y-Axis</a></li>
+			  </ul>
+			  <div class="clear"></div>
+        <div id="sidebar" class="sidebar-designer" style="float: left;">
+          <div id="designer-container" style="">
+  <!--          <h2 class="current">Chart</h2>-->
+		        <div id=options-chart class="pane" style="display: block;"></div>
+  <!--          <h2>Legend</h2>-->
+		        <div id=options-legend class="pane" ></div>
+  <!--          <h2>Title</h2>-->
+		        <div id=options-titles class="pane"></div>
+  <!--          <h2>Subtitle</h2>-->
+		        <div id=options-subtitles class="pane"></div>
+  <!--          <h2>xAxis</h2>-->
+		        <div id=options-xAxis class="pane"></div>
+  <!--          <h2>yAxis</h2>-->
+		        <div id=options-yAxis class="pane"></div>
+		      </div>
+		</div>
+		    
+		    <div id="chartpreview" class="activity-chart"></div>
+		    
+      </div>
+  </body>
+  <script src="/_utils/script/json2.js"></script>
+  <script src="/_utils/script/jquery.js"></script>
+  <script src="/_utils/script/jquery.couch.js"></script>
+  <script src="/_utils/script/sha1.js"></script>
+  <script src="vendor/couchapp/jquery.couch.app.js"></script>
+  <script src="vendor/couchapp/jquery.couch.app.util.js"></script>
+  <script src="vendor/couchapp/jquery.evently.js"></script>
+  <script src="vendor/couchapp/jquery.pathbinder.js"></script>
+  <script src="vendor/couchapp/jquery.mustache.js"></script>
+  <script src="vendor/highcharts/highcharts.js"></script>
+  <script src="vendor/jQuery-UI/js/jquery-ui-1.8.1.custom.min.js"></script>
+  <script src="vendor/farbtastic/farbtastic.js"></script>
+  <script src="vendor/jqTools/jquery.tools.min.js"></script>
+  <script src="vendor/jquerycolors/color.core.js"></script>
+  <script src="vendor/jquerycolors/color.object.js"></script>
+  <script src="vendor/jquerycolors/color.rgb.js"></script>
+  <script src="vendor/jquerycolors/color.parse.js"></script>
+  <script src="vendor/jquerycolors/color.huebased.js"></script>
+  <script src="vendor/jquerycolors/color.hsv.js"></script>
+  <script src="vendor/jquerycolors/color.hsl.js"></script>
+  <script src="script/md5.js"></script>
+  <script src="script/app.js"></script>
+<!--  <script>-->
+<!--  	var worker = new Worker("code.js");-->
+<!--  	worker.onmessage = function(event){-->
+<!--			alert(event.data);-->
+<!--		};-->
+<!--		-->
+<!--		worker.postMessage("hadi len");-->
+<!--  </script>-->
+</html>
