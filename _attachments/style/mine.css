@@ -51,7 +51,7 @@
 /*  border:1px solid green;*/
 	left:260px;
 	position:relative;
-	top:0px;
+	top:20px;
 }
 
 .category {
@@ -138,9 +138,9 @@ ul.css-tabs {
 	border: none;
 	background-color: white;
 	
-	border-bottom-right-radius: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-bottom-right-radius: 10px;
+/*	border-bottom-right-radius: 10px;*/
+/*  -moz-border-radius-bottomright: 10px;*/
+/*  -webkit-border-bottom-right-radius: 10px;*/
   
   -moz-box-shadow: 2px 2px 0px grey;
 	-webkit-box-shadow: 2px 2px 0px grey;
@@ -200,5 +200,18 @@ ul.css-tabs a.current {
 	border-bottom:2px solid #ddd;	
 	color:#000;	
 	cursor:default;
+}
+
+p.previewButton{
+    cursor: pointer;
+    font-size: 10pt;
+    left: 185px;
+    position: absolute;
+    top: 70px;
+    width: 2em;
+}
+
+p.previewButton:hover{
+	color:#B0C4DE;
 }
 

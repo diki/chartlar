@@ -1,6 +1,7 @@
 function(){
   var familySelect = $("select#title-font-family", this);
   var typeSelect = $("select#title-typeface", this);
+  var textSelect = $("p#title-text-input", this);
   
   var fontLink = "http://fonts.googleapis.com/css?family=";
   var rel = "stylesheet";
@@ -111,6 +112,12 @@ function(){
       $("#chartpreview").trigger("optionsChanged", ["title", "style", $$("#options-titles").titleStyle]);
     }  
   });
+  
+  textSelect.click(function(e){
+  	e.preventDefault();
+  	var val = $("#title-text").val();
+  	$("#chartpreview").trigger("optionsChanged", ["title", "text", val]);
+  })
   
   $("#title-font-size > a").height("0.8em");
   $("#title-font-size > a").width("0.5em");

@@ -2,7 +2,7 @@ function(e, category, changed){
     
   var app = $$(this).app;
   
-    var colors;
+  var colors;
   var colorObj = $.Color();
   var widget = $(this);
   

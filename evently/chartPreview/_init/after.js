@@ -4,7 +4,7 @@ function(){
    chart: {
       renderTo: "chartpreview",
       defaultSeriesType: 'line',
-      margin: [50, 150, 60, 80],
+      //margin: [50, 150, 60, 80],
      // backgroundcolor: rgb(156, 73, 73)
    },
    credits: {
@@ -12,10 +12,10 @@ function(){
    },
    
    title: {
-      text: 'Monthly Average Temperature',
+      text: 'Monthly Average Temperat',
       style: {
-         margin: '10px 100px 0 0', // center it
-         fontSize: "40px"
+         //margin: '10px 100px 0 0', // center it
+         fontSize: "20px"
       }
    },
    subtitle: {
