@@ -18,19 +18,25 @@ label {
 }
 
 .color-placeholder {
-	border: 2px solid gray;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	border-radius: 1px;
-	background-image: url("img/color_fill.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-color: white;
-  margin-top: -10px;
+/*	border: 2px solid gray;*/
+/*	-webkit-border-radius: 1px;*/
+/*	-moz-border-radius: 1px;*/
+/*	border-radius: 1px;*/
+/*	background-image: url("img/color_fill.png");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: top left;*/
+  background-color: tomato;
+  margin-top: 13px;
+  box-shadow: 2px 2px 7px 1px #bbb;
+   -moz-box-shadow:    2px 2px 7px 1px #bbb;
+  -webkit-box-shadow: 2px 2px 7px 1px #bbb;
 }
 
 .color-placeholder:hover {
-	border: 3px solid silver;
+	  box-shadow: -2px -2px 6px 3px #bbb;
+   -moz-box-shadow:    -2px -2px 6px 3px #bbb;
+  -webkit-box-shadow: -2px -2px 6px 3px #bbb;
+  cursor:pointer;
 }
 
 .slider {

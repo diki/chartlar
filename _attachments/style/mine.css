@@ -21,19 +21,19 @@
 
 .sidebar-designer {
 /*  position: relative;*/
-	position:absolute;
-  float: left:
+/*	position:absolute;*/
+/*  float: left:*/
   border: none;
   height: 85%;
   width: 250px;
-  top: 80px;
+/*  top: 80px;*/
   
-  border-bottom-right-radius: 40px;
-  -moz-border-radius-bottomright: 40px;
-  -webkit-border-bottom-right-radius: 40px;
+/*  border-bottom-right-radius: 40px;*/
+/*  -moz-border-radius-bottomright: 40px;*/
+/*  -webkit-border-bottom-right-radius: 40px;*/
   
-  -moz-box-shadow: 2px 2px 0px grey;
-	-webkit-box-shadow: 2px 2px 0px grey;
+/*  -moz-box-shadow: 2px 2px 0px grey;*/
+/*	-webkit-box-shadow: 2px 2px 0px grey;*/
 	
 /*	border-style:none groove groove none;*/
 /*	border-width:small;*/
@@ -55,7 +55,7 @@
 }
 
 .category {
-	position: absolute;
+/*	position: absolute;*/
   width: 220px;
 /*  border: 1px solid blue;*/
   margin-bottom: 5px;
