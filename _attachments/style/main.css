@@ -26,7 +26,7 @@ label {
 /*  background-repeat: no-repeat;*/
 /*  background-position: top left;*/
   background-color: tomato;
-  margin-top: 13px;
+/*  margin-top: 13px;*/
   box-shadow: 2px 2px 7px 1px #bbb;
    -moz-box-shadow:    2px 2px 7px 1px #bbb;
   -webkit-box-shadow: 2px 2px 7px 1px #bbb;
@@ -503,6 +503,21 @@ div.avatar img {
 /*	min-height:150px;*/
 /*	padding:15px 20px;*/
 /*	background-color:#ddd;	*/
+}
+
+.color-picker {
+	list-style-type:none;
+}
+
+.color-picker li{
+	float:left;
+	height: 16px;
+	width:16px;
+	border: 1px solid black;
+}
+
+.category {
+	position: absolute;
 }
 
 

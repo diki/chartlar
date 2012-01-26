@@ -57,13 +57,23 @@ function(e, category, changed){
   
   $("#chart-background-color-placeholder", widget).click(function(){
     //$("#chart-background-color").toggle();
-    $("#chart-background-color", widget).show("slide", {direction: "left"}, 1000);
+//    $("#chart-background-color", widget).show("slide", {direction: "left"}, 1000);
     //$("#chart-background-color").css("border-right", "3px solid #87CEFA");
     //$("#chart-background-color").css("border-top", "3px solid #87CEFA");
     //$("#chart-background-color").css("border-bottom", "3px solid #87CEFA");
-    widget.css("border-top", "2px solid red");
+//    widget.css("border-top", "2px solid red");
     //widget.css("border-left", "4px solid #87CEFA");
     //widget.css("border-bottom", "2px solid red");
+    //$("#color-elements", widget).toggle();
+    var display = $("#color-elements", widget).css("display");
+   	if(display=="none"){
+   		$("#color-elements", widget).css("display","block");
+   		$("#color-elements", widget).show("slide", {direction: "up"}, 1000);
+   	}else{
+   		$("#color-elements", widget).css("display","none");
+   		$("#color-elements", widget).hide("slide", {direction: "up"}, 1000);
+   	}
+    
   });
   
 //  $("#chart-background-color-placeholder[rel]").overlay({

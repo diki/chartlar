@@ -1,18 +1,61 @@
 <div class="clear"></div>
-<p class="category-header">Background </p>
+<div class="category-header">Background </div>
 
-<table style="width: 100%; float: left; margin-top: -20px;">
-  <tr>
-    <td style="">
-      <div id="chart-background-color-placeholder" class="color-placeholder" style="background-color: tomato; width: 180px; height: 21px;" rel="#chart-background-color">
-      	<img style="margin:3px" src="images/color_fill.png"></img>
-      </div>
-    </td>
-  </tr>
-  <tr style="display:none;" id="color-elements">
-  	<td style="border:1px solid black;">aaaa</td>
-  </tr>
-<table>
+<!--<table style="width: 100%; float: left; margin-top: -20px;">-->
+<!--  <tr>-->
+<!--    <td style="">-->
+<!--      <div id="chart-background-color-placeholder" class="color-placeholder" style="background-color: tomato; width: 120px; height: 21px;float:left;" rel="#chart-background-color">-->
+<!--      	<img style="margin:3px" src="images/color_fill.png"></img>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--      	<span>#</span>-->
+<!--      	<input type="text" id="colorRGBValue" value="RGB" style="width:70px;margin-top:13px;"></input>-->
+<!--      </div>-->
+<!--    </td>-->
+<!--  </tr>-->
+<!--<table>-->
+
+<div class="background-selector-holder">
+    <div id="chart-background-color-placeholder" class="color-placeholder" style="background-color: tomato; width: 120px; height: 21px;float:left;" rel="#chart-background-color">
+	    	<img style="margin:3px" src="images/color_fill.png"></img>
+	    </div>
+	    <div>
+	    	<span style="background-color:#777777; color:white;">#</span>
+	    	<input type="text" id="colorRGBValue" value="RGB" style="width:70px;"></input>
+	  </div>
+</div>
+<div style="display:none;" id="color-elements">
+<!--	<ul class="color-picker">-->
+<!--		<li></li>-->
+<!--		<li></li>-->
+<!--	</ul>-->
+	<div class="colors-line" id="main-colors">
+		<div style="background-color:#363637"></div>
+		<div style="background-color:#EE1C24"></div>
+		<div style="background-color:#00A752"></div>
+		<div style="background-color:#2E3291"></div>
+		<div style="background-color:#FEF300"></div>
+		<div style="background-color:#70194B"></div>
+		<div style="background-color:#00AEEE"></div>
+		
+		<div style="background-color:#FD2911"></div>
+		<div style="background-color:#D0EA2A"></div>
+		<div style="background-color:#FFFFFF"></div>
+	</div>
+	
+	<div class="colors-line" id="similar-colors">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
 
 <div id="chart-background-color" class="simple_overlay" style="left: 220px;">
   <div class="close"></div>

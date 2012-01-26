@@ -19,6 +19,21 @@
 /*	border: 2px solid maroon; */
 }
 
+#color-elements {
+	height: 40px;
+}
+
+#color-elements > div.colors-line{
+	height: 20px;
+}
+#color-elements > div.colors-line > div{
+	border: 1px solid black;
+	margin: 0px 2px;
+	height: 16px;
+	width: 16px;
+	float:left;
+}
+
 .sidebar-designer {
 /*  position: relative;*/
 /*	position:absolute;*/
@@ -55,8 +70,8 @@
 }
 
 .category {
-/*	position: absolute;*/
-  width: 220px;
+	position: absolute;
+  width: 225px;
 /*  border: 1px solid blue;*/
   margin-bottom: 5px;
 }
@@ -66,7 +81,8 @@
 /*	padding: 2px;*/
 /*	border-bottom: 2px solid grey;*/
 	color: grey;
-	font-weight: bold;
+/*	font-weight: bold;*/
+/*	margin-left: 4px;*/
 }
 
 .simple_overlay {
@@ -213,5 +229,9 @@ p.previewButton{
 
 p.previewButton:hover{
 	color:#B0C4DE;
+}
+
+.background-selector-holder > div{
+	display: inline-block;
 }
 
