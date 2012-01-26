@@ -72,10 +72,61 @@ function(e, category, changed){
    	}else{
    		$("#color-elements", widget).css("display","none");
    		$("#color-elements", widget).hide("slide", {direction: "up"}, 1000);
-   	}
-    
+   	} 
   });
   
+  $("div#main-colors > div", widget).click(function(){
+  	var currentColor = $(this).css("background-color");
+  	var colorObj = $.Color(currentColor);
+//  	var relatedColors = colorObj.related(36);
+//  	console.log(colorObj,relatedColors);
+//  	
+//  	var c1 = relatedColors["anal0"];
+//  	console.log(c1.toString());
+//  	var c2 = relatedColors["anal+"];
+//  	  	console.log(c2.toString());
+//  	var c3 = relatedColors["anal-"];
+//  	  	console.log(c3.toString());
+//  	var c4 = relatedColors["comp0"];
+//  	  	console.log(c4.toString());
+//  	var c5 = relatedColors["comp+"];
+//  		  	console.log(c5.toString());
+//  	var c6 = relatedColors["comp-"];
+//  	  	console.log(c6.toString());
+//  	var c7 = relatedColors["triad0"];
+//  	  	console.log(c7.toString());
+//  	var c8 = relatedColors["triad+"];
+//  	  	console.log(c8.toString());
+//  	var c9 = relatedColors["triad-"];
+//  	  	console.log(c9.toString());
+//  	
+//  	console.log(c1.toString(), c1.analogous(30/360));
+//  	
+//  	var colorArray = [];
+//  	colorArray.push(c1.toString());
+//  	colorArray.push(c2.toString());
+//  	colorArray.push(c3.toString());
+//  	colorArray.push(c4.toString());
+//  	colorArray.push(c5.toString());
+//  	colorArray.push(c6.toString());
+//  	colorArray.push(c7.toString());
+//  	colorArray.push(c8.toString());
+//  	colorArray.push(c9.toString());
+//  	
+//  	console.log(colorArray);
+  	$("div#similar-colors").find("div").each(function(idx,el){
+  		//console.log(el);
+  		var offset=0;
+  		var compOffset = 0
+  		var $el = $(el);
+  		$el.css("background-color", colorObj.analogous((offset+idx*30)/360));
+  		if(idx>=5){
+  			$el.css("background-color", colorObj.analogous(-(offset+idx*15)/360));
+  		}
+  		//
+  	});
+  	
+  });
 //  $("#chart-background-color-placeholder[rel]").overlay({
 //    left: widget.position().left + 250,
 //    top: widget.position().top + 60
