@@ -17,13 +17,13 @@ function(e, category, changed){
   $("#color-palette #main-colors div", widget).click(function(){
   	var bc=$(this).css("background-color");
   	$("div#chart-background-color-placeholder", widget).css("background-color", bc);
-  	$("#chartpreview").trigger("optionsChanged", ["chart", "plotBackgroundColor", bc]);
+  	$("#chartpreview").trigger("optionsChanged", ["chart", "borderColor", bc]);
   });
   
   $("#color-palette #similar-colors div", widget).click(function(){
   	var bc=$(this).css("background-color");
   	$("div#chart-background-color-placeholder", widget).css("background-color", bc);
-  	$("#chartpreview").trigger("optionsChanged", ["chart", "plotBackgroundColor", bc]);
+  	$("#chartpreview").trigger("optionsChanged", ["chart", "borderColor", bc]);
   });
   
   $("div#main-colors > div", widget).click(function(){

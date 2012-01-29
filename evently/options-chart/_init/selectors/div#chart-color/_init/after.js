@@ -2,120 +2,35 @@ function(e, category, changed){
   var colors;
   var colorObj = $.Color();
   var widget = $(this);
-  
-  $("#chart-background-color-palette", widget).farbtastic(
-    function callback(color){
-      $("#chart-background-color-placeholder", widget).css("background-color", color);
-      $("#chart-selected-color", widget).css("background-color", color);
-      $("#chart-selected-color", widget).text(color);
-      colors = color;
-      
-      colorObj = $.Color(color);
-      
-      var color1 = colorObj.analogous(10/360);
-      var color2 = colorObj.analogous(20/360);
-      var color3 = colorObj.analogous(30/360);
-      var color4 = colorObj.analogous(40/360);
-      var color5 = colorObj.analogous(50/360);
-      var color6 = colorObj.analogous(60/360);
-      var color7 = colorObj.analogous(70/360);
-      var color8 = colorObj.analogous(80/360);
-      
-      $("#chart-color-analogous1", widget).find("div")
-        .css("background-color", color1);
-        
-      $("#chart-color-analogous2", widget).find("div")
-        .css("background-color", color2);
-        
-      $("#chart-color-analogous3", widget).find("div")
-        .css("background-color", color3);
-        
-      $("#chart-color-analogous4", widget).find("div")
-        .css("background-color", color4);
-        
-      $("#chart-color-analogous5", widget).find("div")
-        .css("background-color", color5);
-        
-      $("#chart-color-analogous6", widget).find("div")
-        .css("background-color", color6);
-        
-      $("#chart-color-analogous7", widget).find("div")
-        .css("background-color", color7);
-        
-      $("#chart-color-analogous8", widget).find("div")
-        .css("background-color", color8);
-    }
-  );
-  
-  $("div.analogous-color", widget).click(function(){
-    var tempColor = $(this).css("background-color");
-    $("#chart-background-color-placeholder", widget).css("background-color", tempColor);
-    $("input[name=color-name]", widget).val($.Color(tempColor).toHEX());
-    $("#chartpreview").trigger("optionsChanged", ["chart", "backgroundColor", tempColor]);
-    
+ 
+  $("div#chart-color-selector-wrapper img", widget).click(function(){
+    var display = $("#color-palette", widget).css("display");
+   	if(display=="none"){
+   		$("#color-palette", widget).css("display","block");
+   		$("#color-palette", widget).show("slide", {direction: "up"}, 1000);
+   	}else{
+   		$("#color-palette", widget).css("display","none");
+   		$("#color-palette", widget).hide("slide", {direction: "up"}, 1000);
+   	} 
   });
   
-  $("#chart-background-color-placeholder", widget).click(function(){
-    //$("#chart-background-color").toggle();
-//    $("#chart-background-color", widget).show("slide", {direction: "left"}, 1000);
-    //$("#chart-background-color").css("border-right", "3px solid #87CEFA");
-    //$("#chart-background-color").css("border-top", "3px solid #87CEFA");
-    //$("#chart-background-color").css("border-bottom", "3px solid #87CEFA");
-//    widget.css("border-top", "2px solid red");
-    //widget.css("border-left", "4px solid #87CEFA");
-    //widget.css("border-bottom", "2px solid red");
-    //$("#color-elements", widget).toggle();
-    var display = $("#color-elements", widget).css("display");
-   	if(display=="none"){
-   		$("#color-elements", widget).css("display","block");
-   		$("#color-elements", widget).show("slide", {direction: "up"}, 1000);
-   	}else{
-   		$("#color-elements", widget).css("display","none");
-   		$("#color-elements", widget).hide("slide", {direction: "up"}, 1000);
-   	} 
+  $("#color-palette #main-colors div", widget).click(function(){
+  	var bc=$(this).css("background-color");
+  	$("div#chart-background-color-placeholder", widget).css("background-color", bc);
+  	$("#chartpreview").trigger("optionsChanged", ["chart", "backgroundColor", bc]);
+  });
+  
+  $("#color-palette #similar-colors div", widget).click(function(){
+  	var bc=$(this).css("background-color");
+  	$("div#chart-background-color-placeholder", widget).css("background-color", bc);
+  	$("#chartpreview").trigger("optionsChanged", ["chart", "backgroundColor", bc]);
   });
   
   $("div#main-colors > div", widget).click(function(){
   	var currentColor = $(this).css("background-color");
   	var colorObj = $.Color(currentColor);
-//  	var relatedColors = colorObj.related(36);
-//  	console.log(colorObj,relatedColors);
-//  	
-//  	var c1 = relatedColors["anal0"];
-//  	console.log(c1.toString());
-//  	var c2 = relatedColors["anal+"];
-//  	  	console.log(c2.toString());
-//  	var c3 = relatedColors["anal-"];
-//  	  	console.log(c3.toString());
-//  	var c4 = relatedColors["comp0"];
-//  	  	console.log(c4.toString());
-//  	var c5 = relatedColors["comp+"];
-//  		  	console.log(c5.toString());
-//  	var c6 = relatedColors["comp-"];
-//  	  	console.log(c6.toString());
-//  	var c7 = relatedColors["triad0"];
-//  	  	console.log(c7.toString());
-//  	var c8 = relatedColors["triad+"];
-//  	  	console.log(c8.toString());
-//  	var c9 = relatedColors["triad-"];
-//  	  	console.log(c9.toString());
-//  	
-//  	console.log(c1.toString(), c1.analogous(30/360));
-//  	
-//  	var colorArray = [];
-//  	colorArray.push(c1.toString());
-//  	colorArray.push(c2.toString());
-//  	colorArray.push(c3.toString());
-//  	colorArray.push(c4.toString());
-//  	colorArray.push(c5.toString());
-//  	colorArray.push(c6.toString());
-//  	colorArray.push(c7.toString());
-//  	colorArray.push(c8.toString());
-//  	colorArray.push(c9.toString());
-//  	
-//  	console.log(colorArray);
-  	$("div#similar-colors").find("div").each(function(idx,el){
-  		//console.log(el);
+
+  	$("div#similar-colors", widget).find("div").each(function(idx,el){
   		var offset=0;
   		var compOffset = 0
   		var $el = $(el);
@@ -123,19 +38,9 @@ function(e, category, changed){
   		if(idx>=5){
   			$el.css("background-color", colorObj.analogous(-(offset+idx*15)/360));
   		}
-  		//
   	});
   	
   });
-//  $("#chart-background-color-placeholder[rel]").overlay({
-//    left: widget.position().left + 250,
-//    top: widget.position().top + 60
-//  });
-  
-//  $("#chart-background-color-submit").click(function(){
-//    //color = $("#chart-background-color-placeholder").css("background-color");  
-//    $("#chartpreview").trigger("optionsChanged", ["chart", "backgroundColor", colors]);
-//  });
   
   $("#chart-background-color .close", widget).click(function(){
     $("#chart-background-color", widget).hide("slide", {direction: "left"}, 1000);
