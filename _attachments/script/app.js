@@ -5,7 +5,7 @@ $.couch.app(function(app) {
   //$("#account").evently("account", app);  
   $("#chartpreview").evently("chartPreview", app);
   $("#options-chart").evently("options-chart", app);
-//  $("#options-legend").evently("options-legend", app);
+  $("#options-legend").evently("options-legend", app);
   $("#options-titles").evently("options-titles", app);
 //  $("#options-subtitles").evently("options-subtitles", app);
 //  $("#options-xAxis").evently("options-xAxis", app);

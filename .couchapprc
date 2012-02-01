@@ -4,7 +4,7 @@
       "db" : "http://localhost:5984/chartlar"
     },
     "prod" : {
-      "db" : "http://admin:password@myhost.com/mydb"
+      "db" : "http://diki:pass@peripheraldevice.couchone.com/chartlar"
     }
   }
 }
