@@ -4,7 +4,7 @@ function(){
    chart: {
       renderTo: "chartpreview",
       defaultSeriesType: 'line',
-      //margin: [50, 150, 60, 80],
+      margin: [50,50,50,50],
      // backgroundcolor: rgb(156, 73, 73)
    },
    credits: {

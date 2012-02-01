@@ -21,8 +21,10 @@
 
 #color-palette {
 	height: 40px;
-	margin-top: 3px;
-	background: #F7F7F7 url('images/bb.png');
+/*	margin-top: 3px;*/
+/*	background: #F7F7F7 url('images/bb.png');*/
+	padding-top: 4px;
+	background: #DDDDDD;
 }
 
 #color-palette > div.colors-line{
@@ -114,7 +116,8 @@
 	width: 102px;
 	margin-left: -5px;
 	vertical-align: middle;
-	background: #F7F7F7 url('images/bb.png') repeat-x;
+/*	background: #F7F7F7 url('images/bb.png') repeat-x;*/
+	background: #DDDDDD;
 	border-radius: 6px;
 }
 
