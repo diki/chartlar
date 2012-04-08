@@ -1,0 +1,501 @@
+body {
+  font:1em Helvetica, sans-serif;
+  margin:0;
+  padding:4px;
+}
+
+label {
+  font-size: 10px;
+  font-weight: bold;
+/*  font-family: "Josefin Sans Std Light"*/
+}
+
+.option-header {
+	font-size: 18px;
+	background-color: #D65C33;
+	color: Beige;
+	font-weight: bold;
+}
+
+.slider {
+	height: 0.4em;
+	width: 100%;
+}
+
+.options-button {
+	background-image: url("img/preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  width: 3em;
+  position: relative; 
+  left: 150px; 
+  top: -27px;
+  border: 1px groove #eee
+  -webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px; 
+}
+
+.options-button2 {
+	background-image: url("img/preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  width: 3em;
+  border: 1px groove #eee
+  -webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px; 
+}
+
+.designer-sidebar {
+  background-image: url("img/gradient-side.png");
+  background-repeat: repeat-y;
+}
+
+/*.simple_overlay {*/
+/*	*/
+/*	/* must be initially hidden */*/
+/*	display:none;*/
+
+/*	z-index:10000;*/
+/*	*/
+/*	/* styling */*/
+/*	background-color:#333;*/
+/*	*/
+/*	width:230px;	*/
+/*	height:500px;*/
+/*	border:1px solid #fff;*/
+/*	padding: 5px;*/
+/*	*/
+/*	filter:alpha(opacity=50);*/
+/*  opacity: 0.95;*/
+/*  -moz-opacity:0.95;*/
+/*}*/
+
+.color-palette {
+  margin: 20px 0 0 20px;
+  width: 40%;
+/*  background-color: black;*/
+	
+}
+
+/* close button positioned on upper right corner */
+/*.simple_overlay .close {*/
+/*	background-image: url("img/close.png");*/
+/*	position:absolute;*/
+/*	right:-15px;*/
+/*	top:-15px;*/
+/*	cursor:pointer;*/
+/*	height:35px;*/
+/*	width:35px;*/
+/*}*/
+
+.color-preview {
+/*	position:absolute;*/
+/*	right:65px;*/
+/*	top:15px;*/
+	height:50px;
+	width:155px;
+	border: 2px solid silver;
+	text-align: center;
+	margin: 10px auto 0 auto;
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
+	
+}
+
+.analog-colors {
+  position:absolute;
+	right:65px;
+	top:60px;
+	width:155px;
+	text-align: center;
+	list-style: none;
+	color: Beige;
+	padding: 0;
+}
+
+.medium-button:active {
+  background-color:#2068ee;
+  color: white;
+  font-weight: bold;
+  border: blue;
+  margin-left: -24px;
+}
+
+.medium-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: white;
+  
+}
+.color-analogous {
+/*  position: absolute;*/
+  width: 20px;
+  height: 20px;
+/*  right: 5px;*/
+/*  top: 5px;*/
+}
+
+.color-analogous:hover {
+  border: 2px solid silver;
+}
+#accordion {
+/*	background:#333 url(/img/global/gradient/h300.png) 0 0;*/
+/*	width: 300px;*/
+	border-style: none;	
+/*	-background:#666;*/
+}
+
+/* accordion header */
+#accordion h2 {
+	background:#fff url(/img/global/gradient/h30.png);
+	margin:0;
+	padding:5px 15px;
+	font-size:14px;
+	font-weight:normal;
+	border:1px solid #7D9550;
+	border-bottom:1px solid #7D9550;
+	border-top:1px solid #7D9550;
+	cursor:pointer;
+	border-collapse: collapse;		
+}
+
+/* currently active header */
+#accordion h2.current {
+	cursor:default;
+	background-color: #8080E6;
+	color: white;
+	font-weight: bold;
+}
+
+/* accordion pane */
+#accordion .pane {
+/*	border:1px solid #fff;*/
+/*	border-width:0 2px;*/
+	display:none;
+/*	height:180px;*/
+/*	padding:15px;*/
+/*	color:#fff;*/
+/*	font-size:12px;*/
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+	font-weight:normal;
+	margin:0 0 -5px 0;
+	font-size:16px;
+	color:#999;
+}
+
+.inp {
+
+}
+
+h1 {
+  margin:0;
+}
+
+h2 {
+  color:#222;
+}
+
+#current-path {
+  font-weight:normal;
+  color:#555;
+}
+
+#header {
+  padding:4px;
+}
+
+#account {
+  float:right;
+}
+
+/*#content {*/
+/*  clear:both;*/
+/*}*/
+
+#activity {
+  width:65%;
+}
+
+/*#sidebar {*/
+/*  float:right;*/
+/*  width:30%;  */
+/*}*/
+
+#tagcloud, #usercloud {
+  padding:24px 4px;
+}
+
+#tasks ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.clear {
+  clear:left;
+}
+
+#tasks li, #profile {
+  padding:4px;
+  padding-bottom:0;
+  margin:6px;
+  margin-bottom:0;
+  border: 1px solid #fff;
+  background-color:#fff;
+  -webkit-border-radius:14px;
+  -webkit-transition-property:background-color;
+  -webkit-transition-duration:0.5s;
+  -moz-border-radius:14px;
+  -moz-transition-property:background-color;
+  -moz-transition-duration:0.5s;
+}
+
+div#profile {
+  border: 1px solid #999;
+  background-color:#ddd;  
+}
+
+#profile textarea {
+  width:80%;
+}
+
+#tasks li:hover {
+  border: 1px solid #999;
+  background-color:#aaa;
+}
+
+#tasks li.done, #tasks li.done:hover {
+  background-color:#cfb;
+  border: 1px solid #4b4;
+}
+
+#tasks li .body {
+  padding:8px;
+  padding-bottom:0;
+}
+
+#tasks li .react a, #tasks li .react span {
+  color:#fff;
+  padding:0 4px;
+  font-size:0.78em;
+}
+
+#tasks li div.replies li {
+  font-size:0.84em;
+  background:none;
+  border:1px solid #fff;
+}
+
+#tasks li div.replies {
+  margin:2px;
+}
+
+div.avatar {
+  padding:2px;
+  padding-bottom:0;
+  margin-right:4px;
+  float:left;
+  font-size:0.78em;
+  width : 60px;
+  height : 60px;
+  text-align: center;
+}
+
+div.avatar .name {
+  padding-top:2px;
+}
+
+div.avatar img {
+  margin:0 auto;
+  padding:0;
+  width : 40px;
+  height : 40px;
+}
+
+
+/* root element for tabs  */
+.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	
+}
+
+/* single tab */
+.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	margin-top: -15px;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+.tabs a { 
+	background-color: gray;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 111px;
+	text-align:center;	
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+}
+
+.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+.tabs a:hover {
+	background-position: -652px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+.tabs .current, .tabs .current:hover, .tabs li.current a {
+	background-position: -652px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+.tabs .w1 			{ background-position: -519px 0; width:134px; }
+.tabs .w1:hover 	{ background-position: -519px -31px; }
+.tabs .w1.current { background-position: -519px -62px; }
+
+/* width 2 */
+.tabs .w2 			{ background-position: -366px -0px; width:154px; }
+.tabs .w2:hover 	{ background-position: -366px -31px; }
+.tabs .w2.current { background-position: -366px -62px; }
+
+
+/* width 3 */
+.tabs .w3 			{ background-position: -193px -0px; width:174px; }
+.tabs .w3:hover 	{ background-position: -193px -31px; }
+.tabs .w3.current { background-position: -193px -62px; }
+
+/* width 4 */
+.tabs .w4 			{ background-position: -0px -0px; width:194px; }
+.tabs .w4:hover 	{ background-position: -0px -31px; }
+.tabs .w4.current { background-position: -0px -62px; }
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+
+/*ul.css-tabs {  */
+/*	margin:0 !important; */
+/*	padding: 5px 0px 0px 12px;*/
+/*	height:30px;*/
+/*/*	float: left;*/*/
+/*	z-index: 20000;*/
+/*	width: 800px;*/
+/*	position: relative;*/
+/*	left: 250px;*/
+/*	border: 1px solid maroon;*/
+/*		 	*/
+/*}*/
+
+/*/* single tab */*/
+/*ul.css-tabs li {  */
+/*	float:left;	 */
+/*	padding:0; */
+/*	margin:0;  */
+/*	list-style-type:none;*/
+/*/*	margin-top: -15px;*/*/
+/*/*		writing-mode:tb-rl;*/*/
+/*/*	-webkit-transform:rotate(90deg);*/*/
+/*/*	-moz-transform:rotate(90deg);*/*/
+/*/*	-o-transform: rotate(90deg);	*/*/
+/*}*/
+
+/*/* link inside the tab. uses a background image */*/
+/*ul.css-tabs a { */
+/*/*	float:left;*/*/
+/*	font-size:13px;*/
+/*	display:block;*/
+/*/*	padding:5px 30px;	*/*/
+/*	text-decoration:none;*/
+/*	border:1px solid #666;	*/
+/*	border-bottom:0px;*/
+/*	height:26px;*/
+/*	background-color:#efefef;*/
+/*	color:#777;*/
+/*/*	margin-right:2px;*/*/
+/*/*	margin-left: -40px;*/*/
+/*/*	margin-top: 85px;*/*/
+/*	-moz-border-radius-topleft: 4px;*/
+/*	-moz-border-radius-topright:4px;*/
+/*	position:relative;*/
+/*	top:1px;*/
+/*	width: 120px;*/
+/*	*/
+/*/*	transform*/*/
+/*/*	-webkit-transform:rotate(270deg);*/*/
+/*/*	-moz-transform:rotate(270deg);*/*/
+/*/*	-o-transform: rotate(270deg);*/*/
+
+/*	*/
+/*}*/
+
+/*ul.css-tabs a:hover {*/
+/*	background-color:#F7F7F7;*/
+/*	color:#333;*/
+/*}*/
+/*	*/
+/*/* selected tab */*/
+/*ul.css-tabs a.current {*/
+/*	background-color:#ddd;*/
+/*	border-bottom:2px solid #ddd;	*/
+/*	color:#000;	*/
+/*	cursor:default;*/
+/*}*/
+
+	
+/* tab pane */
+.css-panes div {
+/*	display:none;*/
+/*	border:1px solid #666;*/
+/*	border-width:0 1px 1px 1px;*/
+/*	min-height:150px;*/
+/*	padding:15px 20px;*/
+/*	background-color:#ddd;	*/
+}
+
+.color-picker {
+	list-style-type:none;
+}
+
+.color-picker li{
+	float:left;
+	height: 16px;
+	width:16px;
+	border: 1px solid black;
+}
+
+.category {
+	position: absolute;
+}
+
+
